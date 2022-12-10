@@ -1,6 +1,7 @@
 
 :root{
     --mainfont:"Work Sans", sans-serif;
+    --titlefont:"playfair display",sans-serif;
     --whitecolor:#FFFFFF;
 }
 
@@ -33,10 +34,7 @@ header.main_header
     position: absolute;
     top: 0px;
     left: 0px;
-    padding: 20px 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 20px 0px;
     z-index: 2;
     width: 100%;
     border-bottom:1px solid rgba(255, 255, 255, 0.2);
@@ -87,7 +85,7 @@ section.hero
     display: flex;
   min-height: 660px;
   align-items: center;
-
+margin-bottom: 166px;
 }
 
 section.hero figure
@@ -115,7 +113,7 @@ section.hero figure img
 section.hero .hero_text
 {
     
-    margin-left: 120px;
+    margin-left: 0px;
     max-width: 592px;
     z-index:1 ;
     
@@ -149,7 +147,7 @@ header.main_header .main_header_right nav ul li a:hover
   font-family: var(--mainfont);
   font-weight: 700px;
   color:#e28743;
-  font-size: 250%;
+  
   
 
 }
@@ -165,3 +163,103 @@ top: 0;
 z-index: 1;
 }
 
+.conteiner
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1190px;
+    width: 100%;
+    margin: 0 auto;
+}
+header.main_header .conteiner
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* about us */
+
+section.about_us
+{
+    display: flex;
+    width:100%;
+    height: 546px;
+    
+
+}
+section.about_us_figure
+{
+
+}
+/* .img_waterfall::before
+{
+    content: '';
+    display: flex;
+    width: 587px;
+    height: 435px;
+    color:#E3DEC1 */
+    
+}
+.img_waterfall
+{
+   
+    width: 667px ;
+    height: 546px ;
+    margin-right: 44px;
+    
+    
+
+}
+div.waterfall_border
+{
+    border: 2px solid rgba(227, 222, 193, 0.3);
+    width: 577px;
+    height: 425px;
+    padding: 10px 8px;
+
+}
+
+
+.img_mountains
+{
+    position: absolute;
+    top: 283px;
+    left: 281px;
+    width: 386px;
+    height: 263px;
+}
+
+
+section article.about_us_article
+{
+    display:flex ;
+    width: 486px;
+    min-height: 385px;
+    flex-direction: column;
+    gap: 20px;
+    top: 35px;
+   
+}
+section article p.about_us_name
+{
+    font-family:var(--titlefont);
+    font-weight: 500px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2094E6;
+}
+section article h2.about_us_subtitle
+{
+    
+    font-size: 45px;
+    color: #121212;
+   
+
+}
+section article p.about_us_paragraph
+{
+    font-family: var(--mainfont);
+    font-size: 18px;
+    line-height: 150%;
+}
