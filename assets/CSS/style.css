@@ -40,6 +40,20 @@ header.main_header
     border-bottom:1px solid rgba(255, 255, 255, 0.2);
 }
 
+@media (max-width:1024px){
+    header div.logo{
+        margin:0px auto
+    }
+    header.main_header .main_header_right nav
+    {display: none;
+    }
+}
+@media (max-width:1024px){
+    header.main_header .main_header_right div.theme_button
+    {display: none;
+    }
+}
+
 header.main_header .main_header_right
 {
 
@@ -71,14 +85,18 @@ header.main_header .main_header_right nav ul li a
     font-size: 24px;
     font-weight: 500px;
     font-family: "Work Sans", sans-serif;
-    
-    
-    
-    
+  
+}
+header.main_header .main_header_right nav ul li a:hover
+{
+  font-family: var(--mainfont);
+  font-weight: 700px;
+  color:#e28743;
 
 }
 
 /* section.hero */
+
 
 section.hero
 {
@@ -95,29 +113,33 @@ section.hero figure
     left: 0;
     width: 100%;
     height: 100%;
-    
-    
-
 
 }
 
 section.hero figure img
 {
-    
-
     width: 100%;
     height: 100%;
-
 }
 
 section.hero .hero_text
 {
-    
     margin-left: 0px;
     max-width: 592px;
     z-index:1 ;
-    
-    
+}
+
+
+
+@media (max-width:1024px){
+    div.hero_text h1.page_title{
+        font-size: 30px;
+        line-height: 33px;
+    }
+    div.hero_text p.page_subtitle{
+        font-size: 18px;
+
+    }
 }
 section.hero .page_title
 {
@@ -129,6 +151,7 @@ section.hero .page_title
     line-height: 66px;
 }
 
+
 section.hero .page_subtitle
 {
     font-size: 18px;
@@ -138,19 +161,12 @@ section.hero .page_subtitle
     line-height: 27px;
 }
 
+
 .theme_button a:hover
 {
     background-color:rgb(88, 26, 245);
 }
-header.main_header .main_header_right nav ul li a:hover
-{
-  font-family: var(--mainfont);
-  font-weight: 700px;
-  color:#e28743;
-  
-  
 
-}
 section.hero::before
 {
 content: '';
