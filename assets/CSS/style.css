@@ -113,14 +113,14 @@ section.hero figure
     left: 0;
     width: 100%;
     height: 100%;
+   
 
 }
 
 section.hero figure img
 {
-    width: 100%;
-    height: 100%;
-}
+    object-fit: cover;
+  
 
 section.hero .hero_text
 {
@@ -223,7 +223,7 @@ section.about_us_figure
     width: 667px ;
     height: 546px ;
     margin-right: 44px;
-    
+    object-fit: cover;
     
 
 }
@@ -244,6 +244,7 @@ div.waterfall_border
     left: 281px;
     width: 386px;
     height: 263px;
+    object-fit: cover;
 }
 
 
