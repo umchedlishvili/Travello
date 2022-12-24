@@ -16,6 +16,7 @@
     margin: 0px;
     padding: 0px;
     position: relative;
+    
 }
 .theme_button a
 {
@@ -42,19 +43,7 @@ header.main_header
     border-bottom:1px solid rgba(255, 255, 255, 0.2);
 }
 
-@media (max-width:1024px){
-    header div.logo{
-        margin:0px auto
-    }
-    header.main_header .main_header_right nav
-    {display: none;
-    }
-}
-@media (max-width:1024px){
-    header.main_header .main_header_right div.theme_button
-    {display: none;
-    }
-}
+
 
 header.main_header .main_header_right
 {
@@ -105,7 +94,7 @@ section.hero
     display: flex;
   min-height: 660px;
   align-items: center;
-margin-bottom: 166px;
+
 }
 
 section.hero figure
@@ -122,27 +111,21 @@ section.hero figure img
 {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 section.hero .hero_text
 {
-    margin-left: 0px;
+    
+
+
     max-width: 592px;
     z-index:1 ;
 }
 
 
 
-@media (max-width:1024px){
-    div.hero_text h1.page_title{
-        font-size: 30px;
-        line-height: 33px;
-    }
-    div.hero_text p.page_subtitle{
-        font-size: 18px;
 
-    }
-}
 section.hero .page_title
 {
     font-size: 60px;
@@ -184,7 +167,6 @@ z-index: 1;
 .conteiner
 {
     display: flex;
-    justify-content: space-between;
     max-width: 1190px;
     width: 100%;
     margin: 0 auto;
@@ -198,86 +180,436 @@ header.main_header .conteiner
 
 /* about us */
 
-section.about_us
+section.about_us 
 {
-    display: flex;
-    width:100%;
-    height: 546px;
-    
-
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
-section.about_us_figure
-{
 
-}
-/* .img_waterfall::before
+section.about_us section.about_us_pictures
 {
-    content: '';
-    display: flex;
-    width: 587px;
-    height: 435px;
-    color:#E3DEC1 */
     
 }
-.img_waterfall
+
+section.about_us section.about_us_pictures .about_us_figure
 {
-   
-    width: 667px ;
-    height: 546px ;
     margin-right: 44px;
-    
-    
+    width: 667px;
+    height: 546px;
+}
+
+.img_waterfall 
+{
+    max-width: 667px;
+    min-height: 546px;
 
 }
-div.waterfall_border
+  
+div.waterfall_border 
 {
     border: 2px solid rgba(227, 222, 193, 0.3);
     width: 577px;
     height: 425px;
     padding: 10px 8px;
-
 }
-
-
-.img_mountains
+  
+.img_mountains 
 {
     position: absolute;
-    top: 283px;
-    left: 281px;
+    bottom: 0;
+    right: 0;
     width: 386px;
     height: 263px;
-}
-
-
-section article.about_us_article
+  }
+  
+section article.about_us_article 
 {
-    display:flex ;
+    display: flex;
     width: 486px;
     min-height: 385px;
     flex-direction: column;
     gap: 20px;
     top: 35px;
-   
 }
-section article p.about_us_name
+  
+section article p.about_us_name 
 {
-    font-family:var(--titlefont);
+    font-family: var(--titlefont);
     font-weight: 500px;
     font-size: 18px;
     line-height: 150%;
     color: #2094E6;
-}
-section article h2.about_us_subtitle
-{
-    
+  }
+  
+  section article h2.about_us_subtitle {
     font-size: 45px;
     color: #121212;
-   
-
-}
-section article p.about_us_paragraph
-{
+  }
+  
+  section article p.about_us_paragraph {
     font-family: var(--mainfont);
     font-size: 18px;
     line-height: 150%;
+  }
+  
+  section.benefits .conteiner {
+    margin-bottom: 128px;
+    display: flex;
+    gap: 20px;
+    perspective: 1000px;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  
+  .card {
+    width: 285px;
+    min-height: 233px;
+    box-shadow: 0px 5px 20px -10px #333333;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 44px 28px 30px 27px;
+  
+  }
+  
+  .benefits .conteiner a {
+    text-decoration: none;
+    color: #121212;
+  }
+  
+  .card h2 {
+    font-family: var(--titlefont);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #121212;
+  }
+  
+  .card p {
+    font-family: var(--mainfont);
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+  }
+  
+    
+  
+    .img_waterfall {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    div.waterfall_border {
+      width: 100%;
+    }
+  
+    section article.about_us_article {
+      width: 100%;}
+
+      
+      
+      /* Oure Services */
+      section.our_services .conteiner
+      {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 1190px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+      .country::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(16, 99, 184, 0.5);
+        z-index: 1;
+      }
+      .country{
+        max-width: 100%;
+        height: 400px;
+      }
+
+     section.our_services{
+      margin-bottom: 130px;
+     } 
+     
+     
+   
+
+
+     
+      
+     .card_text {
+      top: 140px;
+      position: absolute;
+      text-align: center;
+      z-index: 2; 
+      color: var(--whitecolor);
+     
+      
+    }
+    .card_text_h3 {
+      font-family: var(--titlefont);
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 15px;
+  }
+    .card_text_p {
+      font-family:var(--mainfont)
+      font-weight:400;
+      font-size:16px;
+      line-height: 24px;
+      margin-bottom: 47px;
+  }
+ 
+     section.our_services .our_services_cards{
+      display: flex;
+      gap: 20px;
+     }
+
+     section.our_services .our_services_text{
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap:10px ;
+      margin-bottom: 120px;
+     }
+     section.our_services .our_services_p{
+      font-size: 18px;
+      font-weight: 500;
+      color: #2094E6;
+      font-family: var(--titlefont)
+      line-height: 24px;
+     }
+     section.our_services .our_services_h2{
+      font-size: 45px;
+    font-weight: 500;
+    color:#121212
+    font-family: var(--titlefont)
+    line-height: 60px;
+     }
+
+
+      
+      
+      
+      /* Responsive Settings */
+
+@media (max-width:1024px)
+
+{
+      
+/* Section Hero */
+        header div.logo{
+            margin:0px auto
+        }
+        header.main_header .main_header_right nav
+        {display: none;
+        }
+    
+
+
+        header.main_header .main_header_right div.theme_button
+        {display: none;
+        }
+    
+       
+      section.hero .conteiner .hero_text
+        {
+          text-align:center;
+          margin: 0 40px;
+        }
+
+      div.hero_text h1.page_title{
+          font-size: 20px;
+          line-height: 33px;
+          text-align: center;
+          margin-left: 20px;
+      }
+      div.hero_text p.page_subtitle{
+          font-size: 15px;
+          font-weight: 300;
+  
+      }
+      section.hero{
+       
+      }
+
+      section.hero .conteiner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      }
+  
+    
+
+/* section about_us */
+
+    section.about_us .conteiner 
+
+    {
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+
+
+    section.about_us section.about_us_pictures
+    {
+      margin-bottom: 60px;
+    }
+
+
+    section.about_us section.about_us_pictures .about_us_figure 
+    {
+    
+      width: 100%;
+      
+    }
+
+
+    section.about_us section.about_us_pictures .about_us_figure .img_waterfall
+    {
+      height: 50%;
+      width: auto;
+      max-width: 600px;
+    }
+
+
+    section.about_us section.about_us_pictures .about_us_figure .img_waterfall img
+    {
+      width: 100%;
+      height: auto;
+    }
+
+    section.about_us section.about_us_pictures .about_us_figure .img_mountains
+    {      
+      width: auto;
+      height: 50%;
+    }
+
+    section.about_us section.about_us_pictures .about_us_figure .img_mountains img
+    {      
+      width: 100%;
+      height: auto;
+    }
+    
+
+    section.about_us .conteiner .about_us_article 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        text-align: center;
+        padding: 0 50px;
+        margin-bottom: 24px ;
+    }
+
+    section.about_us .conteiner .about_us_article .about_us_subtitle
+    {
+      font-size: 25px;
+    }
+
+    section.about_us .conteiner .about_us_article .about_us_paragraph
+    {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 25px;
+    }
+
+
+/* section benefits  */
+   
+section.benefits .conteiner
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  gap: 20px;
+  text-align: center;
+}
+
+
+section.benefits .conteiner .card
+ {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+section.benefits .conteiner .card h2 
+{
+  font-size: 20px;
+}
+
+
+
+
+
+/* section our service */
+
+section.our_services .conteiner
+{
+  padding: 0 50px;
+}
+section.our_services .conteiner .our_services_cards
+{
+  flex-direction: column;
+}
+section.our_services .conteiner .our_services_cards .country{
+  height: 350px;
+}
+section.our_services .conteiner .our_services_cards .country::before{
+  height: 350px;
+}
+
+section.our_services .conteiner .our_services_cards .country figure img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+section.our_services .conteiner .our_services_cards .country .card_text{
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+section.our_services .conteiner .our_services_cards .country .card_text .card_text_p
+
+{
+  font-weight: 300;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+section.our_services .conteiner .our_services_cards .country .card_text .card_text_h3
+{
+  font-size: 20px;
+}
+section.our_services .conteiner .our_services_text .our_services_h2
+{
+  font-size: 18px;
+}
+section.our_services .conteiner .our_services_text .our_services_p
+{
+  font-size: 15px
+}
 }
